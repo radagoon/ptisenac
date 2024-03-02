@@ -1,0 +1,152 @@
+* {
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+nav {
+  display: flex;
+  position: fixed;
+  top: 0;
+  background-color: black;
+  height: 5rem;
+  align-items: center;
+  width: 100%;
+  ul {
+    display: flex;
+    justify-content: flex-end;
+    max-width: 900px;
+    display: flex;
+    list-style: none;
+    margin: 0 auto;
+    li {
+      display: block;
+      margin: 0 1ch;
+      a {
+        padding: 1rem 0.5rem;
+        color: white;
+        font-size: 1.1rem;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+section {
+  padding-top: 3rem;
+  min-height: calc(100vh - 5rem);
+  padding: 3rem 1rem 0;
+  max-width: 900px;
+  margin: 0 auto;
+
+  & > h2 {
+    font-size: 5rem;
+    margin-bottom: 4rem;
+    line-height: 5rem;
+    width: 8ch;
+  }
+  & > h3 {
+    font-size: 2rem;
+    margin: 0;
+    margin-top: -4rem;
+    line-height: 5rem;
+  }
+
+  p {
+    margin: 2rem auto 1rem;
+    max-width: 55ch;
+    font-size: 1.2rem;
+    text-indent: 2rem;
+  }
+
+  p > p {
+    margin: 0;
+  }
+}
+
+.curso {
+  & > h3 {
+    font-size: 1.7rem;
+    line-height: 1.7rem;
+  }
+
+  & > p {
+    margin-bottom: 2rem;
+    border-bottom: 5px solid #faf9f6;
+  }
+}
+
+.planos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+
+  .plano {
+    border: 2px solid black;
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+
+    & > h3 {
+      border-bottom: 5px solid #faf9f6;
+      font-size: 1.7rem;
+      line-height: 1.7rem;
+    }
+    & > p {
+      max-width: 19ch;
+      margin: 1rem auto;
+    }
+    & > .preco {
+      font-size: 2rem;
+      line-height: 1.75rem;
+      font-weight: bold;
+      max-width: 9ch;
+      text-align: end;
+      span {
+        font-size: 1.2rem;
+        line-height: 0.75rem;
+        font-weight: normal;
+      }
+    }
+  }
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+
+  label {
+    display: block;
+    font-size: 1.1rem;
+    margin: 0.75rem 0;
+  }
+
+  input {
+    margin-top: 0.2rem;
+    display: block;
+    border: 1px solid black;
+    width: 100%;
+    padding: 0.75rem;
+    background: #faf9f6;
+    transition: 0.2s;
+  }
+
+  input[type="submit"] {
+    margin: 0 auto;
+    width: 8rem;
+  }
+
+  input:focus,
+  textarea:focus {
+    outline: none;
+    background: white;
+    box-shadow: 0 0 0 2px black;
+  }
+}
