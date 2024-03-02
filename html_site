@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>passei.exe</title>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#home">passei.exe</a></li>
+        <li><a href="#sobre">Sobre Mim</a></li>
+        <li><a href="#cursos">Nossos Cursos</a></li>
+        <li><a href="#pagamento">Pagamento</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section id="home">
+    <h2>passei.exe</h2>
+    <h3>O boost que faltava nos seus estudos</h3>
+    <div>
+      <p>Garanta já assistência individualizada e personalizada para suas necessidades educacionais, por um preço que cabe no seu bolso!</p>
+    </div>
+  </section>
+  <section id="sobre">
+    <h2>Sobre Mim</h2>
+    <p>Me chamo Samuel, possuo licenciatura e bacharel em Química pela Universidade Presbiteriana Mackenzie, tenho mais de 8 anos de experiência dando aulas particulares e para o ensino fundamental e médio na rede pública e privada. Meu diferencial é ter muita facilidade em transformar conteúdos extremamente técnicos e considerados difíceis por muitos em algo claro e lúdico para quem tem dificuldades. Tenho certeza que posso fazer a diferença que faltava para seu aprendizado fluir.</p>
+  </section>
+  <section id="cursos">
+    <h2>Cursos</h2>
+    <dl>
+      <dd>Matemática</dd>
+      <dd>Física</dd>
+      <dd>Química</dd>
+    </dl>
+  </section>
+  <section id="pagamento">
+    <h2>Nossos Planos</h2>
+    <div class="planos">
+      <div class="plano">
+        <h3>Plano Lv.1</h3>
+        <p>Disponibilidade de assistência: horário comercial (das 9h às 18h).</p>
+        <p class="preco">R$199,99<br>mensais<span><br>em até x 12 sem juros</span></p>
+      </div>
+      <div class="plano">
+        <h3>Plano Lv.2</h3>
+        <p>Disponibilidade de assistência: das 6h às 20h, com acesso a conteúdos e materiais super diferenciados.</p>
+        <p class="preco">R$299,99<br>mensais <span><br>em até x 12 sem juros</span></p>
+      </div>
+  </section>
+  <section id="contato">
+    <h2>Contato</h2>
+    <form>
+      <label>Nome:
+        <input placeholder="Nome" type="text" name="nome" id="form-nome">
+      </label>
+      <label>Assunto:
+        <input placeholder="Assunto" type="text" name="nome" id="form-assunto">
+      </label>
+      <label>E-mail:
+        <input placeholder="E-mail" type="email" name="email" id="form-email">
+      </label>
+      <input type="submit" value="Enviar">
+    </form>
+  </section>
+</body>
+
+</html>
