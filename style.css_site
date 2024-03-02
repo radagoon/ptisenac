@@ -1,0 +1,142 @@
+* {
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  color: #ffffff;
+  background-color: rgb(15, 62, 0);
+  -webkit-text-stroke: 0.25px black;
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  position: fixed;
+  top: 0;
+  background-color: black;
+  height: 5rem;
+  align-items: center;
+  width: 100%;
+}
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+  max-width: 900px;
+  display: flex;
+  list-style: none;
+  margin: 0 auto;
+}
+nav ul li {
+  display: block;
+  margin: 0 1ch;
+}
+nav ul li a {
+  padding: 1rem 0.5rem;
+  color: white;
+  font-size: 1.1rem;
+  text-decoration: none;
+}
+
+section {
+  padding-top: 3rem;
+  padding: 3rem 1rem 0;
+  max-width: 900px;
+  margin: 0 auto;
+}
+section > h2 {
+  font-size: 3rem;
+  margin-bottom: 4rem;
+  line-height: 5rem;
+}
+section > h3 {
+  font-size: 2rem;
+  margin: 0;
+  margin-top: -4rem;
+  line-height: 5rem;
+}
+section p {
+  margin: 2rem auto 1rem;
+  max-width: 55ch;
+  font-size: 1.2rem;
+  text-indent: 2rem;
+}
+section p > p {
+  margin: 0;
+}
+
+dd {
+  font-size: 1.3rem;
+}
+
+.curso > h3 {
+  font-size: 1.7rem;
+  line-height: 1.7rem;
+}
+.curso > p {
+  margin-bottom: 2rem;
+  border-bottom: 5px solid #ffffff;
+}
+
+.planos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.planos .plano {
+  border: 2px solid black;
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 1rem;
+  min-height: 100px; /* Adicione uma altura mínima ao elemento .plano */
+}
+.planos .plano > h3 {
+  font-size: 1.7rem;
+  line-height: 1.7rem;
+}
+.planos .plano > p {
+  max-width: 19ch;
+  margin: 1rem auto;
+}
+.planos .plano > .preco {
+  font-size: 2rem;
+  line-height: 1.75rem;
+  font-weight: bold;
+}
+.planos .plano > .preco span {
+  font-size: 1.2rem;
+  line-height: 0.75rem;
+  font-weight: normal;
+}
+form {
+  display: flex;
+  flex-direction: column;
+}
+form label {
+  display: block;
+  font-size: 1.1rem;
+  margin: 0.75rem 0;
+}
+form input {
+  margin-top: 0.2rem;
+  display: block;
+  border: 1px solid black;
+  width: 100%;
+  padding: 0.75rem;
+  background: #ffffff;
+  transition: 0.2s;
+}
+form input[type='submit'] {
+  margin: 0 auto;
+  width: 6rem;
+}
+form input:focus,
+form textarea:focus {
+  outline: none;
+  background: white;
+  box-shadow: 0 0 0 2px black;
+} /*# sourceMappingURL=style.css.map */
